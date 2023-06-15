@@ -4,9 +4,21 @@
 
 чтобы удалить папку с файлами нужно  
 
-``` bash
+```bash
 rm -rf namefolder
 ```
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+```
+ 
+
+
 еще команды которые стоит упомянуть  
 ---
 ls - list всего что есть  
@@ -16,4 +28,7 @@ git config --global user.name "VIKTOR"
 git add  
 git remote add origin link  
 git push -u origin main  
+git log --oneline - логи коммитов  
+в head хранится ссылка на ласт коммит  
+хеш испльзуется sha-1   
 Это конец записи.
